@@ -1,6 +1,4 @@
 MAIN:
-	addi sp, sp, 0x400			# init stack pointer at 0x400
-
 	addi a1, zero, 0xC			# set first function parameter
 	jal ra, FIB					# a0 = fib(a1) (jump to FIB function)
 	jal x0, DONE				# exit
